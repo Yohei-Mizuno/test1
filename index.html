@@ -13,75 +13,21 @@ setcookie('value',100);
 </html>
 
 
+
+
+
 <?php
 
-
-$a=9;
-$b=3;
-$c=10;
-
-$answer1= $a + $b;
-print" $a と $b を足し算した結果は".$answer1."<br/>";
-$answer2= $a - $b;
-print " $a から $b を引いた結果は".$answer2."<br/>";
-$answer3 = $a * $b;
-print " $a から $b をかけた結果は".$answer3."<br/>";
-$answer4 = $a / $b;
-print " $a から $b を割った結果は".$answer4."<br/>";
-$answer5 = $c % $b;
-print " $c から $b で割った余りは".$answer5."<br/>";
-
-$a =100;
-$b =200;
-$a =$b;
-print $a."<br/>";
-
-$a = 300;
-$b = 200;
-$a -=$b;
-print $a."<br/>";
-
-$a = "PHPのキソ";
-$b = "第３回は";
-$c = "演算子のお勉強です。";
-$a .= $b;
-$a .= $c;
-print $a."<br/>";
-
-print "PHPのキソ"."第3回です。<br/>";
-$title = "PHPのキソ";
-print "タイトルは".$title."<br>";
-
-$a = 10;
-if ($a === 10){
-    print '$aの値は10です。';
-
-}
-"<br/>";
-
-$a =10;
-if($a===5){
-    print '$aの値は5です。';
-
-}else{
-    print'$aの値は５以外です。'."<br>";
-
-}
-
-
-$a=10;
-if($a===1){
-    print'$aの値は１です。';
-
-}elseif($a===5){
-    print'$aの値は5です';
-
-}elseif($a===10){
-    print '$aの値は10です。';
-
-}else{
-    print'$aの値は５と10以外です。'."<br/>";
-}
-
-
+setcookie('value',100);
 ?>
+<html>
+    <body>
+<?php
+    $getcookie=$_COOKIE['value'];
+    print"このページ1のクッキーの値は「".$getcookie."」です<br/>";
+?>
+        <a href ="page2.php">ページ２へ</a>
+    </body>
+</html>
+
+
